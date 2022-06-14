@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+/* ---------- Style del Menu ---------- */
+.menu{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.menu__enlace{
+    display: inline-block;
+    position: relative;
+    width: 20%;
+}
+.menu__logo{
+    width: 60%;
+    margin: 3px auto;
+}
+.menu__secciones{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+.menu__lista{
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.menu__enlace--decoracion{
+    text-decoration: none;
+    color: white;
+}
+.menu__contacto{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 35px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 7px;
+}
+.menu__contacto:hover{
+    color: white;
+    background-color: #01c38e;
+    border: 2px solid black;
+}
+.menu__traducir{
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    margin-left: 50px;
+    padding: 15px 35px;
+    background-color: #01c38e;
+    color: black;
+    border: 2px solid #01c38e;
+    border-radius: 7px;
+    text-decoration: none;
+}
+/* ---------- Efecto Hover de idiomas en el menu ---------- */
+.menu__traducir{
+    position: relative;
+    display: inline-block;
+}
+.menu__traducir .menu__idioma--hover {
+    position: absolute;
+    display: none;
+}
+.menu__traducir .menu__idioma--hover .menu__opcion--hover {
+    display: block;
+}
+.menu__traducir:hover .menu__idioma--hover {
+    display: block;
+}
+.menu__opcion{
+    padding-top: 30px;
+    text-align: center;
+}
+/* ---------- Style de los encabezados ---------- */
+.encabezado{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+.encabezado__articulo{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    padding: 0 20%;
+    height: auto;
+}
+.encabezado__titulo{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+}
+.encabezado__texto{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.encabezado__boton{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+/* ---------- Efecto hover en el boton del encabezado ---------- */
+.encabezado__boton:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+/* ---------- Style Secciones ---------- */
+.seccion{
+    padding: 3%;
+    text-align: center;
+}
+.seccion__titulo{
+    font-size: 2rem;
+    margin: 30px 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+.seccion__item{
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    padding: 0 30px;
+}
+.seccion--alinear{
+    display: flex;
+    align-items: center;
+}
+.seccion__lista{
+    width: 100%;
+    text-align: center;
+}
+.seccion__icono{
+    width: 40%;
+}
+.seccion__subtitulo{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: #01c38e;
+}
+.seccion__boton{
+    padding: 15px 35px;
+    background-color:#01c38e;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.seccion__datos{
+    display: inline-block;
+    position: relative;
+    width: 45%;
+}
+.seccion__confirmar{
+    padding: 20px;
+}
+.seccion__area{
+    background-color: black;
+    color: #01c38e;
+    border-color: #01c38e;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.seccion__archivo{
+    padding: 15px 35px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.seccion__sublista{
+    list-style: none;
+    margin-bottom: 30px;
+    color: white;
+}
+.seccion__numero{
+    text-decoration: none;
+    color: black;
+}
+.seccion__mapa{
+    border: 0;
+    width: 95%;
+    margin-top: 30px;
+}
+/* ---------- Efecto Hover en los botones de las secciones ---------- */
+.seccion__boton:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+/* ---------- Style Seccion Newsletter ----------*/
+.seccion__texto{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: white;
+}
+.seccion__entrada{
+    width: 400px;
+    padding: 10px 25px;
+    border-radius: 7px;
+    border: 1px solid black;
+    margin: 10px auto 20px auto;
+    display: block;
+}
+/* ---------- Style Footer ---------- */
+.contacto{
+    padding: 5%;
+    height:auto;
+}
+.contacto__redes{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.contacto__logo--stelarze{
+    width: 200px;
+    margin-right: 35%;
+}
+.contacto__logo{
+    display: inline-block;
+    position: relative;
+    width: 40%;
+}
+.contacto__lista{
+    display: inline-block;
+    position: relative;
+    margin-right: 0;
+    width: 49%;
+    text-align: right;
+}
+.contacto__item{
+    display: inline-block;
+    position: relative;
+    width: 10%;
+}
+.contacto__sedes{
+    color: white;
+    padding: 5%;
+}
+.contacto__provincias{
+    text-align: center;
+}
+.contacto__localidades{
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    text-align: center;
+    font-size: 1rem;
+}
+.contacto__subtitulo--margen{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    color: #01c38e;
+}
+.contacto__enlaces{
+    text-decoration: none;
+    color: white;
+    margin: 50px 0;
+}
+.legales__enlaces{
+    text-decoration: none;
+    color:#01c38e;
+}
+.legales{
+    padding: 2%;
+}
+.legales__lista{
+    display: inline-block;
+    position: relative;
+    width: 66%;
+    text-align: left;
+}
+.legales__item{
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    text-align: center;
+}
+.legales__derechos{
+    text-align: right;
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    color: #01c38e;
+}
+/* ----------- Style Pagina Principal(home) ---------- */
+.encabezado--principal{
+    background-image: url('../assets/portadas/home-header.jpg');
+}
+.seccion--laboral{
+    background-image: url("../assets/portadas/empleo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+.seccion--nosotros{
+    background-image: url("../assets/portadas/quienes-somos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+.seccion__articulo--izquierda{
+    position: relative;
+    height: auto;
+    top: 30%;
+    text-align: left;
+    padding-right: 30%;
+}
+.seccion__articulo--derecha{
+    position: relative;
+    height: auto;
+    top: 30%;
+    text-align: right;
+    padding-left: 30%;
+}
+.seccion__boton--blanco{
+    background-color: white;
+    color: black;
+}
+.seccion__item--ancho{
+    width: 19%;
+}
+/* ----------- Style Servicios(Nuestra esencia) ---------- */
+.encabezado--servicios{
+    background-image: url('../assets/portadas/servicios-header.png');
+}
+.seccion--garantia{
+    background-image: url('../assets/portadas/garantia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+.seccion__articulo--centro{
+    position: relative;
+    height: auto;
+    top: 40%;
+    text-align: center;
+    padding: 0 15%;
+}
+.seccion--padding{
+    padding-top: 0;
+}
+.seccion__lista--margen{
+    margin: 70px 0;
+}
+/* ---------- Style Empleos(oportunidades) ----------- */
+.encabezado--empleo{
+    background-image: url('../assets/portadas/entrevista-header.jpg');
+}
+.seccion__item--beneficios{
+    width: 24%;
+}
+.seccion__datos--padding{
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+.seccion__formulario--margen{
+    margin-top: 60px;
+}
+/* ---------- Style Contacto ---------- */
+.encabezado--contacto{
+    background-image: url('../assets/portadas/sedes-header.jpg');
+}
+.seccion__item--ubicacion{
+    width: 30%;
+    padding: 1%;
+}
+.seccion__texto--margen{
+    margin-bottom: 70px;
+}
+.seccion__texto--label{
+    color: #01c38e;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    display: block;
+    margin: 40px 0 20px 0;
+}
+.seccion__leyenda{
+    color: #01c38e;
+    padding: 0 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+/* ---------- Style quienes-somos(nuestra esencia) ----------*/
+.encabezado--nosotros{
+    background-image: url('../assets/portadas/quienes-somos-header.jpg');
+}
+.seccion__articulo--posicion{
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    padding: 0 10% 0 5%;
+}
+.seccion__imagen--posicion{
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    border-radius: 7px;
+}
+.seccion__texto--primario{
+    color: #01c38e;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.seccion__tiempo{
+    list-style-type: none;
+    max-width: 80%;
+    padding: 0;
+    margin: 0 auto;
+}
+.seccion__fecha--primero::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 1.5px;
+    background-color: grey;
+}
+.seccion__fecha--ultimo::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 1.5px;
+    background-color: grey;
+}
+.seccion__fecha--medio{
+    border-top: 2px solid grey;
+}
+.seccion__fecha{
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 25%;
+    padding: 5%;
+}
+.seccion__circulo::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 47%;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #01c38e;
+    border-radius: 8px;
+    background: #01c38e;
+}
+.seccion__contenedor{
+    margin: 70px 0 50px 0;
+}
+.seccion__año{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    color: #01c38e;
+}
+.seccion--margin{
+    margin-bottom: 10%;
+}
+.seccion__lista--personal{
+    width: auto;
+    padding: 5%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.seccion__item--personal{
+    width: auto;
+    text-align: center;
+    display: inline-block;
+}
+.seccion__icono--bordes{
+    border-radius: 50%;
+}
+/*---------- Style Politica de Privacidad, Avisos Legales y Politica de Cookies ---------- */
+.encabezado--privacidad, .encabezado--legal, .encabezado--cookies{
+    background-image: url('../assets/portadas/legales.jpg');
+    height: 500px;
+}
+.seccion--izquierda{
+    text-align: left;
+}
